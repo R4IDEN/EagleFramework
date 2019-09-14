@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EagleFramework.Core.Entities
 {
-    public interface IQueryable<T> where T:class,IEntity,new()
+    public interface IQueryableRepository<T> where T:class,IEntity,new()
     {
         IQueryable<T> Table { get; }
     }
